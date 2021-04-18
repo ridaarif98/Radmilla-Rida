@@ -1,0 +1,99 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+#header {
+    background-color: lightsteelblue;    /*needed  so content does not overlap*/
+    width: 100vw;
+    height: 10vh;
+    position: fixed;
+    top: 0;
+    left: 0;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+
+#header .header_element { /*for both div logo and div nav-bar [nav-bar as child of header flex]*/
+    height: 100%;
+    flex: 1 0 8vw;          /*1 grow, 0 shrink, basis 8vw*/
+    border:2px solid red; /*To delete*/
+    padding: 5px;
+}
+
+.logo img {
+    max-width: 25em;
+}
+
+#header .logo {
+    align-self: flex-start;
+    flex: 3 1 8vw; /*overwrites flex-grow and flex-shrink*/
+}
+
+#nav-bar {    /*nav-bar as parent flex*/
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    background-color: lightsteelblue;
+}
+#nav-bar .nav-link { /*flex child*/
+    flex-grow: 1;
+    flex-shrink: 1;
+    border: 1px solid blue; /*To delete*/
+    text-align: center;
+    padding: 0 1em;
+}
+
+#nav-bar li {
+    display: block;
+    font-weight: bold;
+    font-size: 20px;
+}
+
+#nav-bar li a{
+    text-decoration: none;
+    color: black;
+}
+
+/*------------container start-------------------------*/
+#container {
+    border: 2px solid green;
+    margin-top: 10vh;
+    max-width: 70%;
+    margin-left: auto;
+    margin-right: auto;
+    text-align: center;
+}
+
+.start {
+    border: 1px solid orange;
+    padding-bottom: 20px;
+}
+
+.start h1, input {
+    display: block;
+    padding: 5px;
+    margin: 10px auto;
+}
+
+#features {
+    display: grid;
+    grid-template-columns: 1fr 6fr;
+    grid-gap: 15px;
+    padding: 10px;
+    margin-top: 20px;
+}
+
+#features span {
+    font-size: 75px;
+    color:  darkred;
+}
+
+#features .feature {
+    text-align: justify;
+    padding-bottom: 10px;
+}
