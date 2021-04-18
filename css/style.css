@@ -18,18 +18,18 @@
 }
 
 
-#header .header_element { /*for both div logo and div nav-bar [nav-bar as child of header flex]*/
+#header .nav-bar { /*for both div logo and div nav-bar [nav-bar as child of header flex]*/
     height: 100%;
     flex: 1 0 8vw;          /*1 grow, 0 shrink, basis 8vw*/
     border:2px solid red; /*To delete*/
     padding: 5px;
 }
 
-.logo img {
+#header-img img {
     max-width: 25em;
 }
 
-#header .logo {
+#header-img  {
     align-self: flex-start;
     flex: 3 1 8vw; /*overwrites flex-grow and flex-shrink*/
 }
@@ -96,4 +96,32 @@
 #features .feature {
     text-align: justify;
     padding-bottom: 10px;
+}
+
+
+#video-section {
+    display: block;
+    margin: 100px auto 100px auto;
+}
+
+@media only screen and (max-width: 500px){
+    #header-img img {
+        max-width: 80vw;
+    }
+} 
+
+@media only screen and (max-width: 733px)
+{ 
+   #header-img img {
+       max-width: 80vw;
+   } 
+
+   #container {
+       margin-top: 20vh;   /*pushes container down when header flex wrap*/
+       max-width: 90%;
+   }
+
+ #video {
+    width: 95%;
+    }
 }
