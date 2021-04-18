@@ -17,24 +17,28 @@
     flex-wrap: wrap;
 }
 
-
-#header .nav-bar { /*for both div logo and div nav-bar [nav-bar as child of header flex]*/
+/*
+#header .header_element { /*for both div logo and div nav-bar [nav-bar as child of header flex]
     height: 100%;
-    flex: 1 0 8vw;          /*1 grow, 0 shrink, basis 8vw*/
-    border:2px solid red; /*To delete*/
+    flex: 1 0 8vw;          /*1 grow, 0 shrink, basis 8vw
+    border:2px solid red; /*To delete
     padding: 5px;
-}
+} */
 
-#header-img img {
+#header-img {
+    position: fixed;
+    top: 15px;
+    left: 0;
     max-width: 25em;
 }
-
-#header-img  {
+/*
+#header-img {
     align-self: flex-start;
-    flex: 3 1 8vw; /*overwrites flex-grow and flex-shrink*/
-}
+    flex: 10 1 8vw; /*overwrites flex-grow and flex-shrink*/
+/*} */
 
 #nav-bar {    /*nav-bar as parent flex*/
+    width: 40vw;
     display: flex;
     justify-content: flex-end;
     align-items: center;
@@ -43,18 +47,16 @@
 #nav-bar .nav-link { /*flex child*/
     flex-grow: 1;
     flex-shrink: 1;
-    border: 1px solid blue; /*To delete*/
+   /* border: 1px solid blue; /*To delete*/
     text-align: center;
     padding: 0 1em;
 }
 
-#nav-bar li {
-    display: block;
-    font-weight: bold;
-    font-size: 20px;
-}
 
-#nav-bar li a{
+#nav-bar a{
+    display: block;
+    font-size: 20px;
+    font-weight: bold;
     text-decoration: none;
     color: black;
 }
