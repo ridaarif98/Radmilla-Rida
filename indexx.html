@@ -3,6 +3,51 @@
         <meta charset="UTF-8">
         <title>Fork Me! FCC: Test Suite Template</title>
         <link rel="stylesheet" href="css/style.css">
+        <style>
+            @media only screen and (max-width: 500px){
+                 #header-img img {
+                    max-width: 80vw;
+                 }
+            } 
+
+        @media only screen and (max-width: 733px)
+{ 
+   #header-img img {
+       max-width: 80vw;
+   } 
+
+   #container {
+       margin-top: 20vh;   /*pushes container down when header flex wrap*/
+       max-width: 90%;
+   }
+
+ #video {
+    width: 95%;
+    }
+
+}
+        #box-container {
+                 height: 500px;
+                 display: flex;
+                flex-direction: row;
+            }
+            #box-1 {
+                background-color: dodgerblue;
+                width: 50%;
+                height: 50%;
+            }
+
+            #box-2 {
+                 background-color: orangered;
+                 width: 50%;
+                height: 50%;
+            }
+            #box-3 {
+                 background-color: rgb(117, 78, 209);
+                 width: 50%;
+                height: 50%;
+            }
+        </style>
        
     </head>
     <body>
@@ -22,29 +67,7 @@
             <a class="nav-link" href="#video-section">How it works</a>
             <a class="nav-link" href="#prices">Prices</a>
         </nav>
-        <style>
-            @media only screen and (max-width: 500px){
-    #header-img img {
-        max-width: 80vw;
-    }
-} 
-
-@media only screen and (max-width: 733px)
-{ 
-   #header-img img {
-       max-width: 80vw;
-   } 
-
-   #container {
-       margin-top: 20vh;   /*pushes container down when header flex wrap*/
-       max-width: 90%;
-   }
-
- #video {
-    width: 95%;
-    }
-}
-        </style>
+        
         </header>
     
 <div id="container">
@@ -89,7 +112,11 @@
     </section>
     <section id="prices">
 
-        <p>Prices</p>
+        <div id="box-container">
+            <div id="box-1"></div>
+            <div id="box-2"></div>
+            <div id="box-3"></div>
+          </div>
     </section>
 
 
