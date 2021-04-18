@@ -11,9 +11,9 @@
             } 
 
         @media only screen and (max-width: 733px)
-{ 
-   #header-img img {
-       max-width: 80vw;
+        { 
+            #header-img img {
+            max-width: 80vw;
    } 
 
    #container {
@@ -26,26 +26,38 @@
     }
 
 }
+        #submit{
+            background-color: yellow;
+            border-radius: 10px;
+        }
         #box-container {
                  height: 500px;
                  display: flex;
                 flex-direction: row;
             }
             #box-1 {
-                background-color: dodgerblue;
+                padding-top: 10px;
+                padding-left: 5px;
+                background-color: whitesmoke;
+                border-radius: 25px;
                 width: 50%;
-                height: 50%;
+                height: 60%;
             }
 
             #box-2 {
-                 background-color: orangered;
+                 background-color: whitesmoke;
+                 padding-top: 10px;
+                 border-radius: 25px;
                  width: 50%;
-                height: 50%;
+                height: 60%;
             }
             #box-3 {
-                 background-color: rgb(117, 78, 209);
+                 background-color: whitesmoke;
+                 padding-top: 10px;
+                 
+                 border-radius: 25px;
                  width: 50%;
-                height: 50%;
+                height: 60%;
             }
         </style>
        
@@ -113,9 +125,52 @@
     <section id="prices">
 
         <div id="box-container">
-            <div id="box-1"></div>
-            <div id="box-2"></div>
-            <div id="box-3"></div>
+            <div id="box-1">
+                <h3 style="background-color: grey; border-radius: 10px;">TENOR TROMBONE</h3>
+                <br><br>
+                <a>$600</a>
+                <br><br>
+                <a>Lorem ipsum.</a>
+                <br><br>
+                <a>Lorem ipsum.</a>
+                <br><br>
+                <a>Lorem ipsum dolor</a>
+                <br><br>
+                <a>Lorem ipsum.</a>
+                <br><br>
+                <input type="submit" value="SELECT" id="select-btn" style="background-color: yellow; width: 80px;">
+
+            </div>
+            <div id="box-2">
+                <h3 style="background-color: grey; border-radius: 10px;">TENOR TROMBONE</h3>
+                <br><br>
+                <a>$900</a>
+                <br><br>
+                <a>Lorem ipsum.</a>
+                <br><br>
+                <a>Lorem ipsum.</a>
+                <br><br>
+                <a>Lorem ipsum dolor</a>
+                <br><br>
+                <a>Lorem ipsum.</a>
+                <br><br>
+                <input type="submit" value="SELECT" id="select-btn" style="background-color: yellow; width: 80px;">
+            </div>
+            <div id="box-3">
+                <h3 style="background-color: grey; border-radius: 10px;">TENOR TROMBONE</h3>
+                <br><br>
+                <a>$1200</a>
+                <br><br>
+                <a>Lorem ipsum.</a>
+                <br><br>
+                <a>Lorem ipsum.</a>
+                <br><br>
+                <a>Lorem ipsum dolor</a>
+                <br><br>
+                <a>Lorem ipsum.</a>
+                <br><br>
+                <input type="submit" value="SELECT" id="select-btn" style="background-color: yellow; width: 80px;">
+            </div>
           </div>
     </section>
 

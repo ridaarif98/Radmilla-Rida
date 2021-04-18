@@ -78,6 +78,7 @@
     display: block;
     padding: 5px;
     margin: 10px auto;
+    border-radius: 10px;
 }
 
 #features {
